@@ -5,32 +5,32 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Malware Re-Weaponization (Research)",
+    category: "Threat Intelligence & Forensics",
+    tools: "Endpoint Infection Chains, Configuration Extraction",
+    image: "/images/placeholder.webp",
+    link: "#",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "Telecommunications Security (Lab)",
+    category: "Signaling Protocol Research",
+    tools: "SS7 Vulnerability Analysis, SigPloit Framework",
+    image: "/images/placeholder.webp",
+    link: "#",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
+    title: "System Debloating (In Progress)",
+    category: "Infrastructure Automation",
+    tools: "Bash Scripting, Custom Cleanup Automation",
+    image: "/images/placeholder.webp",
+    link: "#",
   },
   {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Web Protocol Exploitation",
+    category: "Offensive Security",
+    tools: "Vulnerability Assessments, Red Teaming",
+    image: "/images/placeholder.webp",
+    link: "#",
   },
 ];
 
@@ -107,7 +107,7 @@ const Work = () => {
                           {project.category}
                         </p>
                         <div className="carousel-tools">
-                          <span className="tools-label">Tools & Features</span>
+                          <span className="tools-label">Focus & Tactics</span>
                           <p>{project.tools}</p>
                         </div>
                       </div>
@@ -130,8 +130,9 @@ const Work = () => {
             {projects.map((_, index) => (
               <button
                 key={index}
-                className={`carousel-dot ${index === currentIndex ? "carousel-dot-active" : ""
-                  }`}
+                className={`carousel-dot ${
+                  index === currentIndex ? "carousel-dot-active" : ""
+                }`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to project ${index + 1}`}
                 data-cursor="disable"

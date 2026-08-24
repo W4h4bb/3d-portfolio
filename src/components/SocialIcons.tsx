@@ -1,13 +1,11 @@
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
+  FaWhatsapp,
+  FaGoogle,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
-import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
-import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -60,53 +58,26 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a
-            href="https://github.com/akashrmalhotra"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://github.com/W4h4bb" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
         </span>
         <span>
-          <a
-            href="https://www.linkedin.com/in/akashrmalhotra/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://www.linkedin.com/in/abdul-wahab-b08b33288/" target="_blank" rel="noreferrer">
             <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a
-            href="https://www.youtube.com/@Leftbraincoder"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaYoutube />
+          <a href="https://g.dev/wahabb" target="_blank" rel="noreferrer">
+            <FaGoogle />
           </a>
         </span>
         <span>
-          <a
-            href="https://www.instagram.com/leftbraincoder/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaInstagram />
+          <a href="https://wa.me/447874272750" target="_blank" rel="noreferrer">
+            <FaWhatsapp />
           </a>
         </span>
       </div>
-      <a
-        className="resume-button"
-        href="/Akash_Malhotra.pdf"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <HoverLinks text="RESUME" />
-        <span>
-          <TbNotes />
-        </span>
-      </a>
     </div>
   );
 };

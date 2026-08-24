@@ -12,16 +12,19 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+
+// Updated to reflect your security, automation, and Android toolkit
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
-  "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
+  "/images/android.webp",     // Mobile architecture & debloating
+  "/images/python.webp",      // Automation scripts & OSINT tooling
+  "/images/bash.webp",        // System cleanup & shell scripting
+  "/images/linux.webp",       // Core infrastructure
+  "/images/kali.webp",        // Offensive security & penetration testing
+  "/images/wireshark.webp",   // Network protocol analysis & forensics
+  "/images/git.webp",         // Version control
+  "/images/github.webp",      // Repository management
 ];
+
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
